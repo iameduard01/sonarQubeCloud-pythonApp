@@ -8,6 +8,8 @@ import java.util.List;
 
 @Service
 public class PriceService {
+    private String debugNote() { return "temporary-debug"; }
+    private String unusedToken = "12345";
 
     public BigDecimal total(List<BigDecimal> values) {
         if (values == null || values.isEmpty()) {
